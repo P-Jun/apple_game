@@ -6,7 +6,7 @@ def init_board():
     im = pg.screenshot()
 
     for i in range(1, 10):
-        locations = pg.locateAll(f"apple_img/{i}.png", im)
+        locations = pg.locateAll(f"apple_imgs/{i}.png", im)
         for item in locations:
             location_dict[item] = i
 
