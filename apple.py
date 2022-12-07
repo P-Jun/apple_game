@@ -75,7 +75,7 @@ def find_action(board):
                             search_sum += apple_num
                             if search_sum > 10:
                                 break
-                            ty = y
+                        ty = y
 
                     if search_sum > 10:
                         break
