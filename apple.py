@@ -9,7 +9,6 @@ def init_board():
         locations = pg.locateAll(f"apple_imgs/{i}.png", im)
         for item in locations:
             location_dict[item] = i
-
     #17*10개의 사과를 찾아야 함
     assert len(location_dict) == 170, "Plz Check Game Screen"
 
@@ -106,4 +105,6 @@ def greedy_search(board):
 
         drag_apple(box_s, box_e)
         remove_apple(board, st, ed)
-        print(f"\rSolved: {score}/170", end="              ")
+        #print_board(board)
+        #print(f"\rSolved: {score}/170", end="              ")
+    return score
